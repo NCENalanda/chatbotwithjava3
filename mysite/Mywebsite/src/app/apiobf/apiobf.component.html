@@ -1,0 +1,25 @@
+<section id="apiobf" class="secondary-color text-center scrollto clearfix ">
+  <div class="row clearfix">
+      <div class="section-heading">
+          <h3>servers</h3>
+      </div>
+      <div class="post-block featured col-3 wow fadeInUp" data-wow-delay="0.6s" *ngFor="let server of  servers"> 
+        <button (click)="getServerData(server.name)">
+          <div class="button">{{server.name}}</div>
+          
+        </button>
+        <div  data-wow-delay="0.6s" *ngFor="let client of  clients">
+            {{client.name}} 
+            <button (click)="getToken()">
+          <div >getToken</div>
+          </button>
+          </div>
+          <mat-radio-group aria-label="Select an option">
+              <mat-radio-button value="1">Option 1</mat-radio-button>
+              <mat-radio-button value="2">Option 2</mat-radio-button>
+            </mat-radio-group>
+      </div>
+      
+  </div>
+ 
+</section>

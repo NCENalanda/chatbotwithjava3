@@ -1,0 +1,11 @@
+<!--Pricing Tables-->
+<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+    <div class="row clearfix" *ngIf="post">
+  
+        <div class="post-block featured col-1 wow fadeInUp" data-wow-delay="0.6s" >
+         <app-post [post]="post"></app-post>
+        </div>
+    </div>
+    <a (click)="getBack()">Back</a>
+</section>
+  <!--End of Pricing Tables-->
